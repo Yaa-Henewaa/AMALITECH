@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e202ce1;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.container{
+    background: linear-gradient(to top right, rgb(26, 28, 49), rgba(26, 28, 49, 0.712)50%, rgb(1, 47, 65));
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    margin: 40px;
+    padding: 2rem 3rem;
+    box-shadow:2px 2px 2px 2px #00000c2a;
+}
+.nav-bar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.brand{
+    width: 60%;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+.nav-links{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(150, 150, 150);
+    margin-top: 5px;
+}
+.nav-links a{
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(150, 150, 150);
+}
+.dot{
+    display: inline-flex;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgb(26, 79, 179);
+    border-radius: 100%;
+}
+.top_dot{
+    display: inline-flex;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    background-color: rgb(26, 79, 179);
+    border-radius: 100%;
+}
+
+.form-container{
+    margin: 8% 0;
+}
+form{
+    width: 42%;
+}
+form h1{
+    color: white;
+    margin: 10px 0;
+}
+form h2{
+    color: rgb(143, 143, 143);
+    margin: 10px 0;
+    font-size: 16px;
+}
+form p{
+    margin: 20px 0;
+    color: rgb(150, 150, 150);
+}
+.span {
+    color: rgb(21, 21, 145);
+}
+
+.name_inputs{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+}
+input, input[type="text"]{
+    background-color: rgb(36, 49, 77);
+    padding: 10px;
+    margin: 3% 0;
+    border-radius: 18px;
+    border: 2px solid rgb(36, 49, 77);
+    color: white;
+    font-size: 14px;
+}
+input[type="email"], input[type="password"]{
+    width: 100%;
+}
+
+input:focus, input[type="text"]:focus{
+    outline : 2px solid rgb(26, 79, 179);
+}
+input[type="text"]:focus ~ label,
+input[type="text"]:valid ~ label{
+    top: 12%;
+    font-size: 12px;
+    color: rgb(26, 79, 179);
+}
+input input:valid ~ label{
+    top: 20%;
+    font-size: 12px;
+    color: rgb(26, 79, 179);
+}
+input[type="email"]:focus ~ label,
+input[type="email"]:valid ~ label{
+    top: 20%;
+    font-size: 12px;
+    color: rgb(26, 79, 179);
+}
+input[type="password"]:focus ~ label,
+input[type="password"]:valid ~ label{
+    top: 20%;
+    font-size: 12px;
+    color: rgb(26, 79, 179);
+}
+
+.input{
+    position: relative;
+}
+
+label{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    color: rgb(150, 150, 150);
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 200ms;
+}
+button{
+    padding: 10px 15px;
+    margin: 3% 0;
+    border-radius: 18px;
+    color: white;
+    background-color: rgb(26, 79, 179);
+    border: none;
+
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+    background-color: rgba(26, 80, 179, 0.836);
+    cursor: pointer;
+}
+@media screen and (max-width: 1100px){
+    form{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .nav-bar{
+        width: 100%;
+    }
+
+    .container{
+        background-color: rgb(26, 28, 49);
+        border-radius: 20px;
+        margin: 5%;
+        padding: 5% 10%;
+    }
+    .form-container{
+        margin: 20% 0 0 0;
+    }
+    form{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 730px){
+    .brand{
+        font-size: medium;
+    }
+    form h1{
+        font-size: 19px;
+    }
+    .name_inputs{
+        display: block;
+        width: 100%;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+    .nav-links a{
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width:400px) {
+    .form-container{
+        margin: 40% 0 0 0;
+    }
+}

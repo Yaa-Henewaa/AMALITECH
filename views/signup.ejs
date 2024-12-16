@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="brand">
+                <a class=""><div class="top_dot"></div>StreamVibe</a>
+            </div>
+            <nav class="nav-links">
+                <a href="./">Home</a>
+                <a href="./">Join</a>
+            </nav>
+        </div>
+        <div class="form-container">
+            <form action="/signup" method="post">
+                
+                <h1>Create an account<div class="dot"></div></h1>
+                <p>Already a member? <a class="span" href="/">Log in</a></p>
+                <div class="name_inputs">
+                    <div class="input fn_input">
+                        <input type="text" name="firstname" id="firstname" required>
+                        <label class="fs_label">First Name</label>
+                    </div>
+                    <div class="input ln_input">
+                        <input type="text" id="lastname" name="lastname" required>
+                        <label class="ln_label">Last Name</label>
+                    </div>
+                </div>
+                <div class="input">
+                    <input type="email" id="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input">
+                    <input type="password" name="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div>
+                    <button class="submit_btn">Create account</button>
+                    
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

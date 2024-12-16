@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Log in</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="brand">
+                <a class=""><div class="top_dot"></div>StreamVibe</a>
+            </div>
+            <nav class="nav-links">
+                <a href="/home">Home</a>
+                <a href="./">Join</a>
+            </nav>
+        </div>
+        <div class="form-container">
+            <form action="/login" method="post" >
+                
+                <h1>Log in to account<div class="dot"></div></h1>
+                <p>Not a member? <a class="span" href="/signup">Sign Up</a></p>
+                <div class="input">
+                    <input type="email" id="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input">
+                    <input type="password" id="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div>
+                    <button class="submit_btn">Login</button> 
+                    <button class="submit_btn" id="forgotPasswordBtn" >
+                        <a href="/forgot-password" >Forgot Password</a>
+                    </button>
+                    
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+<script>
+     function redirectToForgotPassword() {
+        // Redirect to the "forgot-password" route
+        window.location.href = '/forgot-password';
+    }
+
+</script>
+
+</body>
+</html>
